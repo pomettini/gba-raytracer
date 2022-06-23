@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.lisp": "lisp",
+			"*.njk": "nunjucks",
+			"math.h": "c",
+			"random": "c",
+			"complex": "c"
+		},
+		"makefile.extensionOutputFolder": "./.vscode"
+	}
+}

@@ -1,76 +1,11 @@
-#include "main.h"
-#include "math.c"
+#include "raytracer.c"
 
-static inline vector vector_sub(vector *v1, vector *v2)
-{
-	vector result = { v1->x - v2->x, v1->y - v2->y, v1->z - v2->z };
-	return result;
-}
-
-static inline float vector_dot(vector *v1, vector *v2)
-{
-	return v1->x * v2->x + v1->y * v2->y + v1->z * v2->z;
-}
-
-static inline int intersect_ray_sphere(ray *r, sphere *s, float *t)
-{
-	int ret = 0;
-
-	float a = vector_dot(&r->dir, &r->dir);
-	vector dist = vector_sub(&r->start, &s->pos);
-	float b = 2 * vector_dot(&r->dir, &dist);
-	float c = vector_dot(&dist, &dist) - (s->radius * s->radius);
-	float discr = b * b - 4 * a * c;
-
-	if (discr < 0)
-		ret = 0;
-	else
-	{
-		float sqrt_discr = square_root(discr);
-		float t0 = (-b + sqrt_discr) / 2;
-		float t1 = (-b - sqrt_discr) / 2;
-
-		if (t0 > t1)
-			t0 = t1;
-
-		if ((t0 > 0.001f) && (t0 < *t))
-		{
-			*t = t0;
-			ret = 1;
-		}
-		else
-			ret = 0;
-	}
-
-	return ret;
-}
-
-static inline vector vector_scale (float c, vector *v)
-{
-    vector result = {v->x * c, v->y * c, v->z * c };
-	return result;
-}
-
-static inline vector vector_add (vector *v1, vector *v2)
-{
-    vector result = { v1->x + v2->x, v1->y + v2->y, v1->z + v2->z };
-    return result;
-}
-
-static inline unsigned short rgb(int r, int g, int b)
-{
-	return r | (g << 5) | (b << 10);
-}
-
-static inline void put_pixel(int x, int y, short color)
-{
-	((unsigned short*)0x06000000)[y * SCREEN_WIDTH + x] = color;
-}
+// Thanks to purplealienplanet.com
 
 int main()
 {
 	// Cartridge init
-	*(unsigned int*)0x04000000 = 0x0403;
+	*(unsigned int *)0x04000000 = 0x0403;
 
 	ray r;
 
@@ -79,11 +14,11 @@ int main()
 	materials[0].diffuse.red = 1;
 	materials[0].diffuse.green = 0;
 	materials[0].diffuse.blue = 0;
-	
+
 	materials[1].diffuse.red = 0;
 	materials[1].diffuse.green = 1;
 	materials[1].diffuse.blue = 0;
-	
+
 	materials[2].diffuse.red = 0;
 	materials[2].diffuse.green = 0;
 	materials[2].diffuse.blue = 1;
@@ -136,7 +71,7 @@ int main()
 			r.dir.x = 0;
 			r.dir.y = 0;
 			r.dir.z = 1;
-			
+
 			do
 			{
 				float t = 20000.0f;
@@ -148,37 +83,43 @@ int main()
 					if (intersect_ray_sphere(&r, &spheres[i], &t))
 						current_sphere = i;
 				}
-				if (current_sphere == -1) break;
+				if (current_sphere == -1)
+					break;
 
 				vector scaled = vector_scale(t, &r.dir);
 				vector new_start = vector_add(&r.start, &scaled);
 
 				vector n = vector_sub(&new_start, &spheres[current_sphere].pos);
 				float temp = vector_dot(&n, &n);
-				if (temp == 0) break;
+				if (temp == 0)
+					break;
 
 				int j;
 				for (j = 0; j < 1; j++)
 				{
 					light current_light = lights[j];
 					vector dist = vector_sub(&current_light.pos, &new_start);
-					if (vector_dot(&n, &dist) <= 0.0f) continue;
+					if (vector_dot(&n, &dist) <= 0.0f)
+						continue;
 					float t = square_root(vector_dot(&dist, &dist));
-					if (t <= 0.0f) continue;
+					if (t <= 0.0f)
+						continue;
 
 					ray light_ray;
 					light_ray.start = new_start;
-					light_ray.dir = vector_scale((1/t), &dist);
+					light_ray.dir = vector_scale((1 / t), &dist);
 
 					float lambert = vector_dot(&light_ray.dir, &n) * coef;
-					red += lambert * current_light.intensity.red * spheres[current_sphere].material.diffuse.red;
-					green += lambert * current_light.intensity.green * spheres[current_sphere].material.diffuse.green;
-					blue += lambert * current_light.intensity.blue * spheres[current_sphere].material.diffuse.blue;
+					red += lambert * current_light.intensity.red *
+						   spheres[current_sphere].material.diffuse.red;
+					green += lambert * current_light.intensity.green *
+							 spheres[current_sphere].material.diffuse.green;
+					blue += lambert * current_light.intensity.blue *
+							spheres[current_sphere].material.diffuse.blue;
 				}
 
 				level++;
-			} 
-			while ((coef > 0.0f) && (level < 1));
+			} while ((coef > 0.0f) && (level < 1));
 
 			float r = min(red * 255.0f, 255.0f);
 			float g = min(green * 255.0f, 255.0f);
@@ -188,7 +129,7 @@ int main()
 		}
 	}
 
-	while(1);
+	while (1);
 
 	return 0;
 }
