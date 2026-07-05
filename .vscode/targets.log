@@ -1,0 +1,535 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Thu Jun 30 15:27:27 2022
+
+# Variables
+
+# environment
+JENV_SHELL = zsh
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 19)
+PREFIX := arm-none-eabi-
+# environment
+RUBY_VERSION = ruby-2.7.0
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 5)
+UNAME_R := 21.5.0
+# automatic
+?F = $(notdir $?)
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 44)
+SILENTCMD := @
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from `Makefile', line 23)
+TARGET := gba-raytracer
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+rvm_path = /Users/pomettini/.rvm
+# makefile (from `Makefile', line 26)
+INCLUDES := 
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/pomettini/Git/gba-raytracer
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 8)
+SHELL = /bin/bash
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 27)
+NM := arm-none-eabi-gcc-nm
+# environment
+VSCODE_NLS_CONFIG = {"locale":"it","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 38)
+CFLAGS := -g -mcpu=arm7tdmi -mtune=arm7tdmi -mthumb -mthumb-interwork 
+# makefile (from `Makefile', line 76)
+SFILES := 
+# environment
+STARSHIP_SESSION_KEY = 2432726932167918
+# makefile (from `Makefile', line 75)
+CPPFILES := 
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 43)
+SILENTMSG := @echo
+# makefile (from `Makefile', line 25)
+SOURCES := src
+# makefile (from `/opt/devkitpro/devkitARM/gba_rules', line 9)
+LIBGBA := /opt/devkitpro/libgba
+# makefile (from `Makefile', line 40)
+CXXFLAGS := -g -mcpu=arm7tdmi -mtune=arm7tdmi -mthumb -mthumb-interwork  -fno-rtti -fno-exceptions
+# makefile (from `Makefile', line 110)
+LIBPATHS := -L/opt/devkitpro/libgba/lib
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 23)
+AS := arm-none-eabi-as
+# makefile (from `Makefile', line 74)
+CFILES := main.c
+# environment
+PLAYDATE_SDK_PATH = /Users/pomettini/Developer/PlaydateSDK
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# makefile (from `Makefile', line 28)
+MUSIC := 
+# environment
+P9K_SSH = 0
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/9r/6pddgmh53vl22b0s67hhzymr0000gn/T/vscode-ipc-eeea2d62-8e8c-4b9c-85f5-e647ac7377cb.sock
+# environment
+VSCODE_CWD = /
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 14)
+PATH := /opt/devkitpro/tools/bin:/opt/devkitpro/devkitARM/bin:/Users/pomettini/.rvm/gems/ruby-2.7.0/bin:/Users/pomettini/.rvm/gems/ruby-2.7.0@global/bin:/Users/pomettini/.rvm/rubies/ruby-2.7.0/bin:/usr/local/opt/sphinx-doc/bin:/usr/local/sbin:/usr/local/opt/llvm/bin:/Users/pomettini/.jenv/shims:/Users/pomettini/.jenv/bin:/opt/devkitpro/tools/bin:/Users/pomettini/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:DEVKITPRO=/opt//devkitPro:DEVKITARM=/opt/devkitpro/devkitARM:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:/opt/X11/bin:/opt/devkitpro/tools/bin:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/pomettini/.rvm/bin
+# makefile (from `Makefile', line 89)
+LD := arm-none-eabi-gcc
+# environment
+JENV_FORCEJAVAHOME = true
+# makefile (from `Makefile', line 104)
+HFILES := 
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 98)
+OFILES_BIN := 
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 1)
+MAKEFILE_LIST :=  Makefile /opt/devkitpro/devkitARM/gba_rules /opt/devkitpro/devkitARM/base_rules /opt/devkitpro/devkitARM/base_tools
+# default
+.INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 55)
+LIBDIRS := /opt/devkitpro/libgba
+# makefile (from `Makefile', line 68)
+VPATH := /Users/pomettini/Git/gba-raytracer/src  
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 24)
+AR := arm-none-eabi-gcc-ar
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from `Makefile', line 43)
+LDFLAGS = -g $(ARCH) -Wl,-Map,$(notdir $*.map)
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.0LDYJid9nC/Listeners
+# environment
+JDK_HOME = /Users/pomettini/.jenv/versions/oracle64-13
+# automatic
+%F = $(notdir $%)
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 4)
+UNAME_S := Darwin
+# environment
+DISPLAY = /private/tmp/com.apple.launchd.2euJvrEGaR/org.xquartz:0
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 13)
+DEVKITPATH = $(shell echo "$(DEVKITPRO)" | sed -e 's/^\([a-zA-Z]\):/\/\1/')
+# makefile (from `/opt/devkitpro/devkitARM/gba_rules', line 7)
+PORTLIBS := /opt/devkitpro/portlibs/gba /opt/devkitpro/portlibs/armv4
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+rvm_bin_path = /Users/pomettini/.rvm/bin
+# environment
+PWD = /Users/pomettini/Git/gba-raytracer
+# environment
+GEM_HOME = /Users/pomettini/.rvm/gems/ruby-2.7.0
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/pomettini
+# makefile (from `Makefile', line 72)
+DEPSDIR := /Users/pomettini/Git/gba-raytracer/build
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 30)
+ISVC = $(or $(VCBUILDHELPER_COMMAND),$(MSBUILDEXTENSIONSPATH32),$(MSBUILDEXTENSIONSPATH))
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/pomettini/Library/Application Support/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LOGNAME = pomettini
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 28)
+RANLIB := arm-none-eabi-gcc-ranlib
+# environment
+ZSH = /Users/pomettini/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 50)
+bin2o = 	bin2s -a 4 -H `(echo $(<F) | tr . _)`.h $< | $(AS) -o $(<F).o
+# environment
+JENV_FORCEJDKHOME = true
+# environment
+DEVKITPRO = /opt/devkitpro
+# environment
+GEM_PATH = /Users/pomettini/.rvm/gems/ruby-2.7.0:/Users/pomettini/.rvm/gems/ruby-2.7.0@global
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+IRBRC = /Users/pomettini/.rvm/rubies/ruby-2.7.0/.irbrc
+# environment
+DEVKITARM = /opt/devkitpro/devkitARM
+# environment
+SHLVL = 1
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 21)
+CC := arm-none-eabi-gcc
+# environment
+JAVA_HOME = /Users/pomettini/.jenv/versions/oracle64-13
+# makefile (from `Makefile', line 42)
+ASFLAGS := -g -mthumb -mthumb-interwork
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = pomettini
+# makefile
+.DEFAULT_GOAL := build
+# makefile (from `Makefile', line 106)
+INCLUDE :=  -I/opt/devkitpro/libgba/include -I/Users/pomettini/Git/gba-raytracer/build
+# environment
+JENV_LOADED = 1
+# environment
+rvm_version = 1.29.9 (latest)
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/9r/6pddgmh53vl22b0s67hhzymr0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/pomettini/Library/Application Support/Code/1.68.1-main.sock
+# makefile (from `Makefile', line 33)
+ARCH := -mthumb -mthumb-interwork
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from `/opt/devkitpro/devkitARM/base_rules', line 6)
+PORTLIBS_PATH := /opt/devkitpro/portlibs
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.176692050.176692056
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from `Makefile', line 100)
+OFILES_SOURCES :=  main.o 
+# makefile (from `Makefile', line 27)
+DATA := 
+# automatic
++F = $(notdir $+)
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 26)
+STRIP := arm-none-eabi-strip
+# makefile (from `Makefile', line 66)
+ 
+OUTPUT := /Users/pomettini/Git/gba-raytracer/gba-raytracer
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x4
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 24)
+BUILD := build
+# automatic
+<F = $(notdir $<)
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 22)
+CXX := arm-none-eabi-g++
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from `Makefile', line 77)
+BINFILES := 
+# makefile (from `Makefile', line 48)
+LIBS := -lmm -lgba
+# automatic
+^F = $(notdir $^)
+# makefile (from `/opt/devkitpro/devkitARM/base_tools', line 25)
+OBJCOPY := arm-none-eabi-objcopy
+# environment
+rvm_prefix = /Users/pomettini
+# default
+SUFFIXES := 
+# environment
+DEVKITPPC = /opt/devkitpro/devkitPPC
+# makefile (from `Makefile', line 102)
+OFILES :=   main.o 
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 53379
+# environment
+MY_RUBY_HOME = /Users/pomettini/.rvm/rubies/ruby-2.7.0
+# environment
+STARSHIP_SHELL = zsh
+# variable set hash-table stats:
+# Load=135/1024=13%, Rehash=0, Collisions=39/242=16%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777222, inode 177304691): 12 files, no impossibilities.
+# /Users/pomettini/Git/gba-raytracer/src (device 16777222, inode 177404110): 5 files, no impossibilities.
+# src (device 16777222, inode 177404110): 5 files, no impossibilities.
+
+# 22 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+%.a:
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 12):
+	$(SILENTMSG) $(notdir $@)
+	@rm -f $@
+	$(SILENTCMD)$(AR) -rc $@ $^
+	
+
+%.arm.o: %.arm.cpp
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 18):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.arm.d $(CXXFLAGS) -marm -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.arm.o: %.arm.c
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 23):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.arm.d $(CFLAGS) -marm -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.arm.o: %.arm.m
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 28):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.arm.d $(OBJCFLAGS) -marm -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.thumb.o: %.thumb.cpp
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 33):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.thumb.d $(CXXFLAGS) -mthumb -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.thumb.o: %.thumb.c
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 38):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.thumb.d $(CFLAGS) -mthumb -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.thumb.o: %.thumb.m
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 43):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.thumb.d $(OBJCFLAGS) -mthumb -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.iwram.o: %.iwram.cpp
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 48):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.iwram.d $(CXXFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.iwram.o: %.iwram.c
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 53):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.iwram.d $(CFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.iwram.o: %.iwram.m
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 58):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.iwram.d $(OBJCFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.itcm.o: %.itcm.cpp
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 63):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.itcm.d $(CXXFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.itcm.o: %.itcm.c
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 68):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.itcm.d $(CFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.itcm.o: %.itcm.m
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 73):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.itcm.d $(OBJCFLAGS) -marm -mlong-calls -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.o: %.cpp
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 79):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CXXFLAGS) -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.o: %.c
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 84):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CFLAGS) -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.o: %.m
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 89):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(OBJCFLAGS) -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.o: %.s
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 94):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.o: %.S
+#  commands to execute (from `/opt/devkitpro/devkitARM/base_rules', line 99):
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d -x assembler-with-cpp $(ASFLAGS) -c $< -o $@ $(ERROR_FILTER)
+	
+
+%.gba: %.elf
+#  commands to execute (from `/opt/devkitpro/devkitARM/gba_rules', line 13):
+	$(SILENTCMD)$(OBJCOPY) -O binary $< $@
+	@echo built ... $(notdir $@)
+	$(SILENTCMD)gbafix $@
+	
+
+%_mb.elf:
+#  commands to execute (from `/opt/devkitpro/devkitARM/gba_rules', line 19):
+	$(SILENTMSG) linking multiboot
+	$(SILENTCMD)$(LD) -specs=gba_mb.specs $(LDFLAGS) $(OFILES) $(LIBPATHS) $(LIBS) -o $@
+	
+
+%.elf:
+#  commands to execute (from `/opt/devkitpro/devkitARM/gba_rules', line 24):
+	$(SILENTMSG) linking cartridge
+	$(SILENTCMD)$(LD)  $(LDFLAGS) -specs=gba.specs $(OFILES) $(LIBPATHS) $(LIBS) -o $@
+	
+
+# 21 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: build clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+/opt/devkitpro/devkitARM/gba_rules:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-28 04:27:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-23 19:25:54
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 116):
+	@[ -d $@ ] || mkdir -p $@
+	@$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile
+	
+
+# Not a target:
+/opt/devkitpro/devkitARM/base_rules:
+#  Implicit rule search has been done.
+#  Last modified 2020-07-28 04:27:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 121):
+	@echo clean ...
+	@rm -fr $(BUILD) $(TARGET).elf $(TARGET).gba 
+	
+
+# Not a target:
+/opt/devkitpro/devkitARM/base_tools:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2020-07-28 04:27:14
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/30=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# General (`VPATH' variable) search path:
+# /Users/pomettini/Git/gba-raytracer/src
+
+# # of strings in strcache: 4
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 3980 / max = 3980 / min = 3980 / avg = 3980
+
+# Finished Make data base on Thu Jun 30 15:27:28 2022
+
+ 

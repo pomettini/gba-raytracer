@@ -52,10 +52,9 @@ int main()
 	lights[0].intensity.green = 1;
 	lights[0].intensity.blue = 1;
 
-	int x, y;
-	for (y = 0; y < SCREEN_HEIGHT; y++)
+	for (int y = 0; y < SCREEN_HEIGHT; y++)
 	{
-		for (x = 0; x < SCREEN_WIDTH; x++)
+		for (int x = 0; x < SCREEN_WIDTH; x++)
 		{
 			float red = 0;
 			float green = 0;
@@ -76,9 +75,8 @@ int main()
 			{
 				float t = 20000.0f;
 				int current_sphere = -1;
-				int i;
 
-				for (i = 0; i < 3; i++)
+				for (int i = 0; i < 3; i++)
 				{
 					if (intersect_ray_sphere(&r, &spheres[i], &t))
 						current_sphere = i;
@@ -94,8 +92,7 @@ int main()
 				if (temp == 0)
 					break;
 
-				int j;
-				for (j = 0; j < 1; j++)
+				for (int j = 0; j < 1; j++)
 				{
 					light current_light = lights[j];
 					vector dist = vector_sub(&current_light.pos, &new_start);

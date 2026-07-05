@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/pomettini/Git/gba-raytracer'
+[ -d build ] || mkdir -p build
+/Applications/Xcode.app/Contents/Developer/usr/bin/make --no-print-directory -C build -f /Users/pomettini/Git/gba-raytracer/Makefile
+make: Entering an unknown directory
+make: Leaving an unknown directory
+make: Leaving directory `/Users/pomettini/Git/gba-raytracer'
+ 
+make: *** build: No such file or directory.  Stop.
+make: *** [build] Error 2
+
